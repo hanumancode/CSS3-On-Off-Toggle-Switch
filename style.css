@@ -50,3 +50,29 @@ body {
 .checkbox-button input:checked + div .switch {
     transform: translateX(60px);
 }
+
+.checkbox-button .switch:before {
+    content: 'ON';
+    position: absolute;
+    top: 0;
+    left: -60px;
+    text-align: center;
+    line-height: 40px;
+    width: 60px;
+    height: 100%;
+    background: green;
+    font-weight: bold;
+}
+
+.checkbox-button .switch:after {
+    content: 'OFF';
+    position: absolute;
+    top: 0;
+    right: -60px;
+    text-align: center;
+    line-height: 40px;
+    width: 60px;
+    height: 100%;
+    background: red;
+    font-weight: bold;
+}
