@@ -12,14 +12,36 @@ body {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 40px;
-    background: #b7b7b7;
 }
 
 .checkbox-button input {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     display: block;
     cursor: pointer;
     opacity: 0;
+    z-index: 1;
+}
+
+.checkbox-button div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid black;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox-button div .switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #000;
 }
